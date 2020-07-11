@@ -1,2 +1,0 @@
-# meshdiff
-Mesh Diff Tool
