@@ -27,6 +27,7 @@ Live Server extension (5.6.1)
 
 - ローカル環境で動作するHTTPサーバをインストールして下さい  
 Visual Studio Codeの[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)拡張機能を利用することを推奨します。  
+Dockerで実行可能にする[Dockerfile](https://github.com/Tiryoh/docker_meshdiff)を作成して頂いたのでそちらの利用も可能です。
 
 ## git情報の格納
 このツールは`target`以下に`git clone --mirror`されたフォルダ内のgit情報からメッシュファイル（STLファイルのみ）をリストアップします。次のようにgit cloneを行って下さい。  
@@ -53,11 +54,16 @@ meshdiff/target/HOWTOUSE.git$ git unpack-objects < nanika-hash-value.pack
 `objects`以下に00～FFからなる名前のディレクトリが展開されていれば成功です。  
 
 ## 使い方
+meshdiffをブラウザ上で実行するためにHTTPサーバを起動します。  
 
-HTTPサーバを起動します。VSCodeのLive Server拡張機能を利用する場合は画面の右下に起動ボタンがあるので操作します。  
+### VSCodeのLiveServerを利用する場合
+meshdiffのルートディレクトリをVScodeの`フォルダーを開く`で開いたのち、VSCodeのLive Server拡張機能を起動します。画面の右下に起動ボタンがあるので操作します。  
 ![インストール後](https://github.com/nomumu/meshdiff/blob/image/live_server.png)  
 起動すると次のようなインタフェースにブラウザからアクセスできます。  
 ![インタフェース](https://github.com/nomumu/meshdiff/blob/image/interface.png)  
+
+### Dockerを利用する場合
+Dockerを利用する場合は、Tiryohさんが作成された[Dockerfile](https://github.com/Tiryoh/docker_meshdiff)を利用して下さい。
 
 各インタフェースの使用方法は次の通りです。  
 - フォルダ名入力  
@@ -82,11 +88,11 @@ Afterのリビジョンリストで選択しているメッシュをブラウザ
   表示を回転します。  
   - マウス右ドラッグ  
   表示を平行移動します。  
-  - スクロール
+  - スクロール  
   表示を拡大/縮小します。  
-  - XYZ表示
-  赤:X軸、緑:Y軸, 青:Z軸 です。
-  - グリッド表示
-  1cm四方のグリッドで25cmの範囲を表示しています。
+  - XYZ表示  
+  赤:X軸、緑:Y軸, 青:Z軸 です。  
+  - グリッド表示  
+  1cm四方のグリッドで25cmの範囲を表示しています。  
 - クリア  
 メッシュ表示をクリアします。  
