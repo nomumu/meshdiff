@@ -1,2 +1,2 @@
-# modeldiff
-Model Diff Tool
+# meshdiff
+Mesh Diff Tool
