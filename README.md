@@ -17,7 +17,7 @@ Live Server extension (5.6.1)
 
 このツールの動作にはいくつかのjsファイルとツールのインストールが必要です。  
 - jsディレクトリに下記ファイルをコピーして下さい  
-  - three.min.js ([three.js/build](https://github.com/mrdoob/three.js/tree/dev/build/))
+  - three.min.js ([three.js](https://github.com/mrdoob/three.js/tree/dev/build/))
   - STLLoader.js ([three.js](https://github.com/mrdoob/three.js/tree/dev/examples/js/loaders))
   - OrbitControls.js ([three.js](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/))
   - inflate_stream.min.js ([imaya/zlib.js](https://github.com/imaya/zlib.js/blob/develop/bin/))
@@ -57,7 +57,7 @@ meshdiff/target/HOWTOUSE.git$ git unpack-objects < nanika-hash-value.pack
 HTTPサーバを起動します。VSCodeのLive Server拡張機能を利用する場合は画面の右下に起動ボタンがあるので操作します。  
 ![インストール後](https://github.com/nomumu/meshdiff/blob/image/live_server.png)  
 起動すると次のようなインタフェースにブラウザからアクセスできます。  
-![インタフェース](https://github.com/nomumu/meshdiff/blob/image/live_server.png)  
+![インタフェース](https://github.com/nomumu/meshdiff/blob/image/interface.png)  
 
 各インタフェースの使用方法は次の通りです。  
 - フォルダ名入力  
