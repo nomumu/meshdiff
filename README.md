@@ -37,7 +37,7 @@ meshdiff/target$ git clone --mirror https://HOWTOUSE.git (メッシュを含む�
 ```
 `clone`した後、gitオブジェクトが`pack`されている場合はこれを展開する必要があります。次のようにすると確認できます。  
 ```sh
-meshdiff/target$ cd HOTTOUSE.git
+meshdiff/target$ cd HOWTOUSE.git
 meshdiff/target/HOWTOUSE.git$ cd objects/pack
 meshdiff/target/HOWTOUSE.git/objects/pack$ ls
 nanika-hash-value.idx
@@ -52,6 +52,15 @@ meshdiff/target/HOWTOUSE.git/objects/pack$ cd ../..
 meshdiff/target/HOWTOUSE.git$ git unpack-objects < nanika-hash-value.pack
 ```
 `objects`以下に00～FFからなる名前のディレクトリが展開されていれば成功です。  
+
+### 展開済のtargetの内容を更新する方法
+更新したい各ディレクトリへ移動し次のようにコマンドを実行します。
+
+```sh
+meshdiff/target$ cd HOWTOUSE.git
+meshdiff/target/HOWTOUSE.git$ git fetch --all
+meshdiff/target/HOWTOUSE.git$ git pack-refs --all
+```
 
 ## 使い方
 meshdiffをブラウザ上で実行するためにHTTPサーバを起動します。  
